@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a41d3567-83a1-4e77-ac71-a7cf75ee0392" name="Default Changelist" comment="" />
+    <list default="true" id="a41d3567-83a1-4e77-ac71-a7cf75ee0392" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AboutMeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AboutMeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AboutMe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AboutMe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_18_154535_create_about_mes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_18_154535_create_about_mes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/about/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/about/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/_top_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/_top_nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +35,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -151,6 +163,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hgPJfUkjhFBxbTVChgAlaUy8IU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -202,6 +215,7 @@
       <workItem from="1601046360790" duration="266000" />
       <workItem from="1601228293382" duration="4372000" />
       <workItem from="1601298846031" duration="14969000" />
+      <workItem from="1602173275941" duration="7462000" />
     </task>
     <servers />
   </component>
@@ -237,10 +251,10 @@
     </state>
     <state x="526" y="299" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1601312459304" />
     <state x="554" y="353" key="NewPhpFileDialog/0.0.1440.860@0.0.1440.860" timestamp="1600441324117" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1601300799709">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1602173275934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1601300799709" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1602173275934" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601309300644">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

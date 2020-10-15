@@ -14,7 +14,7 @@ class AboutMeController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.about.create');
     }
 
     /**
@@ -24,7 +24,7 @@ class AboutMeController extends Controller
      */
     public function create()
     {
-        return view('backend.about.create');
+        //
     }
 
     /**
@@ -38,15 +38,29 @@ class AboutMeController extends Controller
 
 
        $request->validate([
-          'name' => ['required','string','min:5','max:35'],
-          'email' => ['required'],
-          'aboutme1' => ['required'],
-       ]);
+          'name' => ['required','string','min:3','max:35'],
+          'email' => ['required','string','min:15','max:50'],
+          'phone' => ['required','string','min:11','max:11'],
+          'about_me_short' => ['required'],
+          'about_me_long' => ['required'],
+          'gender' => ['required'],
+          'marital_status' => ['required'],
+          'nationality' => ['required'],
+          'dob' => ['required'],
+       ],
+           [
+               'name.required' => 'Full Name Required',
+               'email.required' => 'Email Required'
+        ]);
 
        $data['name'] = $request->name;
        $data['email'] = $request->email;
-       $data['aboutme1'] = $request->aboutme1;
-       $data['aboutme2'] = $request->aboutme2;
+       $data['phone'] = $request->email;
+       $data['about_me_short'] = $request->about_me_short;
+       $data['about_me_long'] = $request->about_me_long;
+       $data['gender'] = $request->gender;
+       $data['marital_status'] = $request->marital_status;
+       $data['nationality'] = $request->nationality;
        $data['dob'] = $request->dob;
 
        AboutMe::create($data);

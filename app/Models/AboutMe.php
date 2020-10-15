@@ -10,6 +10,16 @@ class AboutMe extends Model
     use HasFactory;
 
     protected $fillable = [
-      'name','email','aboutme1','photo' ,'status'
+      'name',
+        'email',
+        'phone',
+        'about_me_short',
+        'about_me_long',
+        'gender',
+        'marital_status',
+        'nationality',
+        'dob',
+        'photo',
+        'status'
     ];
 }

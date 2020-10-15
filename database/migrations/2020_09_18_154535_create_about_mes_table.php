@@ -17,10 +17,14 @@ class CreateAboutMesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email',100);
-            $table->string('photo')->nullable();
-            $table->string('aboutme1')->nullable();
-            $table->string('aboutme2')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('about_me_short')->nullable();
+            $table->longText('about_me_long')->nullable();
+            $table->enum('gender',['male','female', 'others']);
+            $table->enum('marital_status',['married','unmarried', 'single','divorce','widowed'])->default('unmarried');
+            $table->string('nationality')->nullable();
             $table->string('dob')->nullable();
+            $table->string('photo')->nullable();
             $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
         });

@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('backend.blank_page');
+//    return view('backend.blank_page');
+    return view('backend.form');
+
 });
 Route::get('/form', function () {
     return view('backend.form');
@@ -22,15 +24,20 @@ Route::get('/form', function () {
 
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//    return view('dashboard');
+//})->name('dashboard');
 
-Route::resource('aboutme',\App\Http\Controllers\AboutMeController::class);
-Route::resource('experience',\App\Http\Controllers\ExperienceController::class);
-Route::resource('education',\App\Http\Controllers\EducationController::class);
-Route::resource('skills',\App\Http\Controllers\SkillsController::class);
-Route::resource('portfolio',\App\Http\Controllers\PortfolioController::class);
-Route::resource('recommendation',\App\Http\Controllers\RecommendationController::class);
-Route::resource('blog',\App\Http\Controllers\BlogController::class);
-Route::resource('contact',\App\Http\Controllers\ContactController::class);
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('dashboard',);
+    Route::resource('aboutme',\App\Http\Controllers\AboutMeController::class);
+    Route::resource('experience',\App\Http\Controllers\ExperienceController::class);
+    Route::resource('education',\App\Http\Controllers\EducationController::class);
+    Route::resource('skills',\App\Http\Controllers\SkillsController::class);
+    Route::resource('portfolio',\App\Http\Controllers\PortfolioController::class);
+    Route::resource('recommendation',\App\Http\Controllers\RecommendationController::class);
+    Route::resource('blog',\App\Http\Controllers\BlogController::class);
+    Route::resource('contact',\App\Http\Controllers\ContactController::class);
+});
+
+
